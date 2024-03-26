@@ -23,7 +23,9 @@ namespace ApplicationAnalysis
             Console.WriteLine("Nomor 3 = ");
             Console.WriteLine(laptop.os);
 
-            laptop.ModifyOS("Windows");
+            Console.WriteLine("type to modify the os:");
+            string a = Console.ReadLine();
+            laptop.ModifyOS(a);
             Console.WriteLine("After modifying the value : " + laptop.os);
 
             //no 4
@@ -244,8 +246,39 @@ namespace ApplicationAnalysis
     class Cache
     {
         private static Dictionary<int, object> _cache = new Dictionary<int, object>();
-        public static void Add(int key, object value) { _cache.Add(key, value); }
-        public static object Get(int key) { return _cache[key]; }
+        private static LinkedList<int> _accessOrder = new LinkedList<int>();
+        private static int _capacity = 10000; // set kapasitas cache
+        public static void Add(int key, object value) 
+        { 
+            //_cache.Add(key, value); //code lama 
+            if (_cache.ContainsKey(key))
+            {
+                _cache[key] = value;
+                _accessOrder.Remove(key);
+            }
+            else
+            {
+                if (_cache.Count >= _capacity)
+                {
+                    int leastRecentlyUsed = _accessOrder.First.Value;
+                    _accessOrder.RemoveFirst();
+                    _cache.Remove(leastRecentlyUsed);
+                }
+                _cache.Add(key, value);
+            }
+            _accessOrder.AddLast(key);
+        }
+        public static object Get(int key) 
+        {
+            if (_cache.ContainsKey(key))
+            {
+                _accessOrder.Remove(key);
+                _accessOrder.AddLast(key);
+                return _cache[key];
+            }
+            return null; //return null jika key tidak ditemukan di cache
+        }
+        
     }
     #endregion nomor 7
 
