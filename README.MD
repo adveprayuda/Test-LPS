@@ -27,7 +27,7 @@ disini saya menggunakan custom class untuk me-return value tersebut. Method yang
  -- nomor 3
  
 class yang diberikan saya ubah menjadi sebagai berikut
-"
+{
 class Laptop
 {
     private string _os;
@@ -37,7 +37,7 @@ class Laptop
 
     public void ModifyOS(string newOs) { _os = newOs; }
 }
-"
+}
 saat saya akan membuat value baru pada variable os yang masih kosong saya akan memanggil method laptop
 "var laptop = new Laptop("macOs");"
 saat variable os dipanggil "Console.WriteLine(laptop.os)" maka yang akan ter-print adalah "macOs", berikutnya saya membuat modifikasi sebagai berikut
