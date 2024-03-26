@@ -1,0 +1,14 @@
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\bin\Debug\net6.0\LPSTest.exe
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\bin\Debug\net6.0\LPSTest.deps.json
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\bin\Debug\net6.0\LPSTest.runtimeconfig.json
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\bin\Debug\net6.0\LPSTest.dll
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\bin\Debug\net6.0\LPSTest.pdb
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.AssemblyInfoInputs.cache
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.AssemblyInfo.cs
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.csproj.CoreCompileInputs.cache
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.dll
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\refint\LPSTest.dll
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.pdb
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\LPSTest.genruntimeconfig.cache
+C:\Project\Tes Lamar Kerja\LPS\LPSTest\obj\Debug\net6.0\ref\LPSTest.dll
